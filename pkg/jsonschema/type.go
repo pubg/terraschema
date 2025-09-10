@@ -103,13 +103,15 @@ func getNullableNode(name string, typeInterface any, options CreateSchemaOptions
 	if err != nil {
 		return nil, err
 	}
-	_, ok := internalNode["type"].(string)
+	title, ok := internalNode["type"].(string)
 	if !ok {
 		return nil, fmt.Errorf("could not get type %v as a string", internalNode["type"])
 	}
 
+	internalNode["title"] = title
+
 	node["oneOf"] = []any{
-		map[string]any{"type": "null"},
+		map[string]any{"type": "null", "title": "null"},
 		internalNode,
 	}
 	node["title"] = fmt.Sprintf("%s: Select a type", name)
