@@ -11,8 +11,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	tsjson "github.com/HewlettPackard/terraschema/pkg/json"
-	"github.com/HewlettPackard/terraschema/pkg/jsonschema"
+	tsjson "github.com/pubg/terraschema/pkg/json"
+	"github.com/pubg/terraschema/pkg/jsonschema"
 )
 
 var (
@@ -40,7 +40,7 @@ var rootCmd = &cobra.Command{
 		"files, parses a list of variables along with their type and validation rules, and converts " +
 		"them to a schema which complies with JSON Schema Draft-07.\nThe default behaviour is to scan " +
 		"the current directory and output a schema file called 'schema.json' in the same location. " +
-		"\nFor more information see https://github.com/HewlettPackard/terraschema.",
+		"\nFor more information see https://github.com/pubg/terraschema.",
 	PreRunE:      preRunCommand,
 	RunE:         runCommand,
 	SilenceUsage: true,

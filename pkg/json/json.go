@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/HewlettPackard/terraschema/pkg/model"
-	"github.com/HewlettPackard/terraschema/pkg/reader"
+	"github.com/pubg/terraschema/pkg/model"
+	"github.com/pubg/terraschema/pkg/reader"
 )
 
 type ExportVariablesOptions struct {

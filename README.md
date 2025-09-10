@@ -9,9 +9,9 @@ them to a schema which complies with
 
 To install this application, do
 ```
-$ go install github.com/HewlettPackard/terraschema@latest
+$ go install github.com/pubg/terraschema@latest
 ```
-or alternatively, download the correct binary for your PC from the [releases](https://github.com/HewlettPackard/terraschema/releases) tab.
+or alternatively, download the correct binary for your PC from the [releases](https://github.com/pubg/terraschema/releases) tab.
 
 ### Motivation
 

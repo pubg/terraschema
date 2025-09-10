@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/HewlettPackard/terraschema/cmd"
+	"github.com/pubg/terraschema/cmd"
 )
 
 func main() {
